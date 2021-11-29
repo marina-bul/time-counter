@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Новый Год",
+    "date": "01-01-2022",
+    "background": "https://images.unsplash.com/photo-1610902277153-9fbd44104299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+  },
+
+  {
+    "id": 2,
+    "name": "23 февраля",
+    "date": "02-23-2022",
+    "background": "https://images.unsplash.com/photo-1502214722586-9c0a74759710?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"  
+  },
+
+  {
+    "id": 3,
+    "name": "8 марта",
+    "date": "03-08-2022",
+    "background": "https://images.unsplash.com/photo-1615359450428-da8b71f676c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
+  }
+]
