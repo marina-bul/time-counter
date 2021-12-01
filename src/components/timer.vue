@@ -107,7 +107,7 @@ export default {
   background-size: cover;
 }
 h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   letter-spacing: 0.5rem;
   text-align: center;
   text-shadow: -5px -3px 0 #222, 4px -4px 0 #222, -4px 4px 0 #222,
@@ -127,7 +127,7 @@ h2 {
 
 .big-text {
   margin: 1rem 3rem;
-  font-size: 6rem;
+  font-size: 7rem;
   line-height: 1;
   font-weight: bold;
   text-shadow: -5px -3px 0 #222, 4px -4px 0 #222, -4px 4px 0 #222,
@@ -147,5 +147,33 @@ h2 {
   font-size: 1.3rem;
   text-shadow: 2px 2px 0 #222;
   letter-spacing: 10px;
+}
+
+@media (max-width: 900px) {
+  h2 {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+
+  .big-text {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 2rem;
+    line-height: 4rem;
+    text-shadow: -3px -3px 0 #222, 4px -4px 0 #222, -4px 4px 0 #222,
+      2px 2px 0 #222, 4px 4px 0 antiquewhite, 5px 5px 0 antiquewhite,
+      6px 6px 0 antiquewhite, 7px 7px 0 antiquewhite;
+  }
+
+  .big-text {
+    font-size: 3rem;
+    text-shadow: -3px -3px 0 #222, 4px -4px 0 #222, -4px 4px 0 #222,
+      2px 2px 0 #222, 4px 4px 0 antiquewhite, 5px 5px 0 antiquewhite,
+      6px 6px 0 antiquewhite, 7px 7px 0 antiquewhite;
+  }
 }
 </style>

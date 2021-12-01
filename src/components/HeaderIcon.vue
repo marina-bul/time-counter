@@ -39,4 +39,11 @@ button {
   background-size: cover;
   cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  button {
+    width: 5rem;
+    height: 5rem;
+  }
+}
 </style>

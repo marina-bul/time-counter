@@ -48,6 +48,7 @@ export default {
 
 <style scoped>
 .select-list {
+  padding: 1rem;
   width: 50%;
   display: flex;
   justify-content: space-between;

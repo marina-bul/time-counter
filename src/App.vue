@@ -56,8 +56,7 @@ export default {
 
 #app {
   min-height: 100vh;
-  background-color: darkblue;
-  overflow: hidden;
+  background-color: #8b203063;
 }
 
 .fade-enter-active,
