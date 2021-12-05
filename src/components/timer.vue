@@ -105,6 +105,7 @@ export default {
   color: antiquewhite;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 h2 {
   font-size: 5rem;
@@ -161,19 +162,23 @@ h2 {
 }
 
 @media (max-width: 400px) {
+  .countdown {
+    padding-top: 7rem;
+  }
+
   h2 {
-    font-size: 2rem;
-    line-height: 4rem;
-    text-shadow: -3px -3px 0 #222, 4px -4px 0 #222, -4px 4px 0 #222,
-      2px 2px 0 #222, 4px 4px 0 antiquewhite, 5px 5px 0 antiquewhite,
-      6px 6px 0 antiquewhite, 7px 7px 0 antiquewhite;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-shadow: -2px -2px 0 #222, 3px -3px 0 #222, -3px 3px 0 #222,
+      2px 2px 0 #222, 2px 2px 0 antiquewhite, 4px 4px 0 antiquewhite,
+      6px 6px 0 antiquewhite, 5px 5px 0 antiquewhite;
   }
 
   .big-text {
-    font-size: 3rem;
+    font-size: 2rem;
     text-shadow: -3px -3px 0 #222, 4px -4px 0 #222, -4px 4px 0 #222,
-      2px 2px 0 #222, 4px 4px 0 antiquewhite, 5px 5px 0 antiquewhite,
-      6px 6px 0 antiquewhite, 7px 7px 0 antiquewhite;
+      2px 2px 0 #222, 3px 3px 0 antiquewhite, 5px 5px 0 antiquewhite,
+      7px 7px 0 antiquewhite, 6px 6px 0 antiquewhite;
   }
 }
 </style>

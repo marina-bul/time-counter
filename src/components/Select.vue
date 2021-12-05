@@ -57,6 +57,7 @@ export default {
 }
 
 .select-list-item {
+  margin-bottom: 10px;
   padding: 10px;
   font-size: 18px;
   color: antiquewhite;
@@ -67,5 +68,26 @@ export default {
 
 .item-active {
   background-color: #d27c1f;
+}
+
+@media (max-width: 600px) {
+  .select-list {
+    max-height: 150px;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+
+  .select-list-item {
+    margin-bottom: 0;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+  }
+
+  .item-active {
+    background-color: #d27c1f;
+  }
 }
 </style>
