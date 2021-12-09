@@ -169,16 +169,14 @@ h2 {
   h2 {
     font-size: 1.5rem;
     line-height: 3rem;
-    text-shadow: -2px -2px 0 #222, 3px -3px 0 #222, -3px 3px 0 #222,
-      2px 2px 0 #222, 2px 2px 0 antiquewhite, 4px 4px 0 antiquewhite,
-      6px 6px 0 antiquewhite, 5px 5px 0 antiquewhite;
+    text-shadow: 3px 3px #531319, 3px -3px #531319, -3px 3px #531319,
+      -3px -3px #531319, 3px 3px 6px rgb(0 0 0 / 50%);
   }
 
   .big-text {
     font-size: 2rem;
-    text-shadow: -3px -3px 0 #222, 4px -4px 0 #222, -4px 4px 0 #222,
-      2px 2px 0 #222, 3px 3px 0 antiquewhite, 5px 5px 0 antiquewhite,
-      7px 7px 0 antiquewhite, 6px 6px 0 antiquewhite;
+    text-shadow: 3px 3px #531319, 3px -3px #531319, -3px 3px #531319,
+      -3px -3px #531319, 3px 3px 6px rgb(0 0 0 / 50%);
   }
 }
 </style>

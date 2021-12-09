@@ -76,7 +76,21 @@ export default {
     flex-direction: column;
     justify-content: start;
     flex-wrap: nowrap;
-    overflow: scroll;
+    overflow: auto;
+    overflow-x: hidden;
+  }
+
+  .select-list::-webkit-scrollbar {
+    width: 7px;
+    background-color: #f7f4f1;
+  }
+
+  .select-list::-webkit-scrollbar-track {
+    background-color: #f7f4f1;
+  }
+
+  .select-list::-webkit-scrollbar-thumb {
+    background-color: #d27c1f;
   }
 
   .select-list-item {
