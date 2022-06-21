@@ -44,7 +44,7 @@ export default {
   props: {
     date: {
       type: String,
-      default: "01-01-2022",
+      default: "01-01-2023",
     },
     name: {
       type: String,
@@ -73,12 +73,17 @@ export default {
     }, 1000);
   },
 
+  computed: {
+    newEvent: function() {
+      return new Date(this.date)
+    }
+  },
+
   methods: {
     countDown() {
-      const newYearsDate = new Date(this.date);
       const currentDate = new Date();
 
-      let totalSeconds = (newYearsDate - currentDate) / 1000;
+      let totalSeconds = (this.newEvent - currentDate) / 1000;
 
       this.days = Math.floor(totalSeconds / 3600 / 24);
       this.hours = Math.floor((totalSeconds / 3600) % 24);
@@ -97,23 +102,23 @@ export default {
 .countdown {
   position: relative;
   height: 100vh;
-  padding-top: 15rem;
+  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Poppins", sans-serif;
-  color: antiquewhite;
+  color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 h2 {
+  margin-bottom: 15px;
   font-size: 5rem;
   letter-spacing: 0.5rem;
   text-align: center;
   text-shadow: -5px -3px 0 #222, 4px -4px 0 #222, -4px 4px 0 #222,
-    4px 4px 0 #222, 5px 5px 0 antiquewhite, 6px 6px 0 antiquewhite,
-    7px 7px 0 antiquewhite, 8px 8px 0 antiquewhite;
+    4px 4px 0 #222, 5px 5px 0;
   letter-spacing: 10px;
   transform: scaleY(0.7);
   -webkit-transform: scaleY(0.7);
@@ -121,23 +126,26 @@ h2 {
 }
 
 .countdown-container {
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #8b203067;
+  border-radius: 20px;
 }
 
 .big-text {
   margin: 1rem 3rem;
-  font-size: 7rem;
+  font-size: 4rem;
   line-height: 1;
   font-weight: bold;
-  text-shadow: -5px -3px 0 #222, 4px -4px 0 #222, -4px 4px 0 #222,
+  /* text-shadow: -5px -3px 0 #222, 4px -4px 0 #222, -4px 4px 0 #222,
     4px 4px 0 #222, 5px 5px 0 antiquewhite, 6px 6px 0 antiquewhite,
     7px 7px 0 antiquewhite, 8px 8px 0 antiquewhite;
   letter-spacing: 10px;
   transform: scaleY(0.7);
   -webkit-transform: scaleY(0.7);
-  -moz-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7); */ 
 }
 
 .countdown-el {
@@ -152,8 +160,8 @@ h2 {
 
 @media (max-width: 900px) {
   h2 {
-    font-size: 3rem;
-    line-height: 5rem;
+    font-size: 2rem;
+    line-height: 4rem;
   }
 
   .big-text {
@@ -175,8 +183,6 @@ h2 {
 
   .big-text {
     font-size: 2rem;
-    text-shadow: 3px 3px #531319, 3px -3px #531319, -3px 3px #531319,
-      -3px -3px #531319, 3px 3px 6px rgb(0 0 0 / 50%);
   }
 }
 </style>
